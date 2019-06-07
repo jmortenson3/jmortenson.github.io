@@ -1,3 +1,39 @@
 body {
   font-family: sans-serif;
+  font-size: 16px;
+  margin: auto 20%;
+}
+
+small {
+  font-size: 1rem;
+}
+
+.slideshow-img {
+  max-height: 400px;
+  display: inline-block;
+}
+
+.icon-img {
+  max-height: 75px;
+  border-radius: 15px;
+}
+
+.inline-text {
+  display: inline-block;
+}
+
+.lg-header, .md-header, .sm-header {
+  margin-bottom: 0.1rem;
+}
+
+.lg-header {
+  font-size: 3.5rem;
+}
+
+.md-header {
+  font-size: 3rem;
+}
+
+.sm-header {
+  font-size: 2.5rem;
 }
