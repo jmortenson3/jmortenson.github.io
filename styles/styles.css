@@ -1,16 +1,36 @@
 body {
   font-family: sans-serif;
   font-size: 16px;
-  margin: auto 20%;
+  margin: auto 10%;
 }
 
 small {
   font-size: 1rem;
 }
 
-.slideshow-img {
-  max-height: 400px;
-  display: inline-block;
+.jumbotron, .jumbotron h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.carousel-inner {
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item img, .carousel-item iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icon-img {
@@ -36,4 +56,16 @@ small {
 
 .sm-header {
   font-size: 2.5rem;
+}
+
+.carousel-indicators li {
+  background-color: #a3a3a3;
+  opacity: 0.75;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+
+.carousel-indicators li.active {
+  background-color: lightgreen;
 }

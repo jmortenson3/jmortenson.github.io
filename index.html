@@ -3,68 +3,108 @@
   <head>
     <meta charset="utf-8">
     <title>Josiah Mortenson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header>
-      <h1 class="inline-text lg-header">Josiah Mortenson</h1>
-      <small class="inline-text">Software Developer</small>
-    </header>
-    <section>
-      <h2 class="md-header">Experience</h2>
-      <article>
-        <p>
-          Professional software engineer since 2015 with experience in
-          creating ETL data workflows and scripting process automation.
-          Experience with a wide variety of technologies including
-          Informatica PowerCenter, Python, JavaScript, SQL, Git, Jenkins, Bash,
-          Oracle, and MongoDB. I particularly enjoy creating games and
-          writing back end code.
-      </p>
-      </article>
-    </section>
-    <section>
-      <h2 class="md-header">Work</h2>
-      <article>
-        <img class="icon-img" src="img/rocket-ball-icon-hi.png" alt="Fling Up App Icon">
-        <h3 class="inline-text sm-header">Fling Up</h3>
-        <p>
-          Fling Up is an infinite ball-launching mobile game available 
-          on Android.  
-          Created with Unity, available on the 
-          <a href="https://play.google.com/store/apps/details?id=com.tinroofgamesllc.flingup" target="_blank">
-            Google Play Store</a>
+    <main role="main">
+      <header class="jumbotron">
+        <h1 class="inline-text lg-header">Josiah Mortenson</h1>
+        <small class="inline-text">Software Developer</small>
+      </header>
+      <section>
+        <h2 class="md-header">Experience</h2>
+        <article>
+          <p>
+            Professional software engineer since 2015 with experience in
+            creating ETL data workflows and scripting process automation.
+            Experience with a wide variety of technologies including
+            Informatica PowerCenter, Python, JavaScript, SQL, Git, Jenkins, Bash,
+            Oracle, and MongoDB. I particularly enjoy creating games and
+            writing back end code.
         </p>
-        <iframe class="slideshow-img" src="https://www.youtube.com/embed/JAtxDKBBGxg" frameborder="0" width="460" height="340"></iframe>
-        <img class="slideshow-img" src="img/flingup-purple.png" alt="Fling Up purple gameplay">
-        <img class="slideshow-img" src="img/flingup-grey.png" alt="Fling Up grey gameplay">
-        <img class="slideshow-img" src="img/flingup-red.png" alt="Fling Up red gameplay">
-        <img class="slideshow-img" src="img/flingup-gameover.png" alt="Fling Up game over">
+        </article>
+      </section>
+      <section>
+        <h2 class="md-header">Work</h2>
+        <article>
+          <img class="icon-img" src="img/rocket-ball-icon-hi.png" alt="Fling Up App Icon">
+          <h3 class="inline-text sm-header">Fling Up</h3>
+          <p>
+            Fling Up is an infinite ball-launching mobile game available 
+            on Android.  
+            Created with Unity, available on the 
+            <a href="https://play.google.com/store/apps/details?id=com.tinroofgamesllc.flingup" target="_blank">
+              Google Play Store</a>
+          </p>
+          <div id="flingupCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#flingupCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#flingupCarousel" data-slide-to="1"></li>
+              <li data-target="#flingupCarousel" data-slide-to="2"></li>
+              <li data-target="#flingupCarousel" data-slide-to="3"></li>
+              <li data-target="#flingupCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item slideshow-img active"><iframe src="https://www.youtube.com/embed/JAtxDKBBGxg" frameborder="0" width="400" height="800"></iframe></div>
+              <div class="carousel-item"><img slideshow-img" src="img/flingup-purple.png" alt="Fling Up purple gameplay" width="2000" height="2000"></div>
+              <div class="carousel-item slideshow-img"><img src="img/flingup-grey.png" alt="Fling Up grey gameplay" width="2000" height="2000"></div>
+              <div class="carousel-item slideshow-img"><img src="img/flingup-red.png" alt="Fling Up red gameplay" width="2000" height="2000"></div>
+              <div class="carousel-item slideshow-img"><img src="img/flingup-gameover.png" alt="Fling Up game over" width="2000" height="2000"></div>
+            </div>
+          </div>
+        </article>
+        <h3 class="inline-text sm-header">Budger</h3>
+        <p>
+          Budger is a simple personal bill/monthly budget tracking web app.
+          Created with VueJS, Node.JS, and MongoDB.
+          <a href="https://mybudger.com/" target="_blank">MyBudger.com</a>
+        </p>
+        <div id="mybudgerCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#mybudgerCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mybudgerCarousel" data-slide-to="1"></li>
+            <li data-target="#mybudgerCarousel" data-slide-to="2"></li>
+            <li data-target="#mybudgerCarousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img src="img/mybudger-list-desktop.png" alt="My Budger list desktop"></div>
+            <div class="carousel-item"><img src="img/mybudger-list-mobile.png" alt="My Budger list mobile"></div>
+            <div class="carousel-item"><img src="img/mybudger-add-bill-desktop.png" alt="My Budger add bill desktop"></div>
+            <div class="carousel-item"><img src="img/mybudger-add-bill-mobile.png" alt="My Budger add bill mobile"></div>
+          </div>
+        </div>
       </article>
-      <h3 class="inline-text sm-header">Budger</h3>
-      <p>
-        Budger is a simple personal bill/monthly budget tracking web app.
-        Created with VueJS, Node.JS, and MongoDB.
-        <a href="https://mybudger.com/" target="_blank">MyBudger.com</a>
-      </p>
-      <img class="slideshow-img" src="img/mybudger-list-desktop.png" alt="My Budger list desktop">
-      <img class="slideshow-img" src="img/mybudger-list-mobile.png" alt="My Budger list mobile">
-      <img class="slideshow-img" src="img/mybudger-add-bill-desktop.png" alt="My Budger add bill desktop">
-      <img class="slideshow-img" src="img/mybudger-add-bill-mobile.png" alt="My Budger add bill mobile">
-    </article>
-    <article>
-      <h3 class="inline-text sm-header">Potion Blast</h3>
-      <p>
-        Potion Blast is a match-3 mobile game featuring bubbly potions mixing in
-        over 50 levels.  Coming soon to the Google Play Store!
-      </p>
-      <img class="slideshow-img" src="img/potionblast-main-menu.png" alt="Potion Blast main menu">
-      <img class="slideshow-img" src="img/potionblast-levelselect.png" alt="Potion Blast level select">
-      <img class="slideshow-img" src="img/potionblast-level-start.png" alt="Potion Blast level start">
-      <img class="slideshow-img" src="img/potionblast-power-ups.png" alt="Potion Blast power ups">
-      <img class="slideshow-img" src="img/potionblast-nice.png" alt="Potion Blast compliment">
-      <img class="slideshow-img" src="img/potionblast-level-complete.png" alt="Potion Blast level complete">
-    </article>
-    </section>
+      <article>
+        <h3 class="inline-text sm-header">Potion Blast</h3>
+        <p>
+          Potion Blast is a match-3 mobile game featuring bubbly potions mixing in
+          over 50 levels.  Coming soon to the Google Play Store!
+        </p>
+        <div id="potionblastCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#potionblastCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#potionblastCarousel" data-slide-to="1"></li>
+            <li data-target="#potionblastCarousel" data-slide-to="2"></li>
+            <li data-target="#potionblastCarousel" data-slide-to="3"></li>
+            <li data-target="#potionblastCarousel" data-slide-to="4"></li>
+            <li data-target="#potionblastCarousel" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item slideshow-img active"><img src="img/potionblast-main-menu.png" alt="Potion Blast main menu" width="2000" height="2000"></div>
+            <div class="carousel-item slideshow-img"><img src="img/potionblast-levelselect.png" alt="Potion Blast level select" width="2000" height="2000"></div>
+            <div class="carousel-item slideshow-img"><img src="img/potionblast-level-start.png" alt="Potion Blast level start" width="2000" height="2000"></div>
+            <div class="carousel-item slideshow-img"><img src="img/potionblast-power-ups.png" alt="Potion Blast power ups" width="2000" height="2000"></div>
+            <div class="carousel-item slideshow-img"><img src="img/potionblast-nice.png" alt="Potion Blast compliment" width="2000" height="2000"></div>
+            <div class="carousel-item slideshow-img"><img src="img/potionblast-level-complete.png" alt="Potion Blast level complete" width="2000" height="2000"></div>
+          </div>
+        </div>
+      </article>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
