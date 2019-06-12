@@ -25,6 +25,7 @@ small {
 
 .carousel-item img, .carousel-item iframe {
   display: block;
+  max-width: 800px;
   width: 100%;
   height: auto;
   position: absolute;
@@ -68,4 +69,21 @@ small {
 
 .carousel-indicators li.active {
   background-color: lightgreen;
+}
+
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    height: 800px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 500px) {
+  .carousel-inner {
+    height: 500px;
+  }
+
+  .carousel-item img, .carousel-item iframe {
+    max-width: 425px;
+  }
 }
