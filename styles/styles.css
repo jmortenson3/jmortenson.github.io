@@ -23,7 +23,7 @@ small {
   width: 100%;
 }
 
-.carousel-item img, .carousel-item iframe {
+.carousel-item img {
   display: block;
   max-width: 800px;
   width: 100%;
@@ -32,6 +32,13 @@ small {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .icon-img {
@@ -76,6 +83,10 @@ small {
   .carousel-inner {
     height: 800px;
   }
+
+  .carousel-item img {
+    max-height: 100%;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 500px) {
@@ -85,5 +96,6 @@ small {
 
   .carousel-item img, .carousel-item iframe {
     max-width: 425px;
+    max-height: 100%;
   }
 }
