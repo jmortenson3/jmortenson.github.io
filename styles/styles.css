@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
 body {
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
 }
 
@@ -18,15 +20,32 @@ article {
 }
 
 .jumbotron {
-  height: 50vh;
-  padding-top: 15vh;
+  height: 100vh;
+  padding-top: 25vh;
   background-color: #252a44;
   color: white;
   text-align: center;
 }
 
+#greeting {
+  font-size: 5.5rem;
+  letter-spacing: -0.3rem;
+}
+
 #myName {
-  font-size: 3.5rem;
+  color: lightgreen;
+}
+
+#occupation {
+  color: coral;
+}
+
+#passion {
+  color: yellow;
+}
+
+#openSource {
+  color: lightskyblue;
 }
 
 #subtitle {
@@ -118,12 +137,9 @@ article {
     padding-top: 15vh;
   }
 
-  
-
-  #myName {
-    font-size: 5rem;
+  #greeting {
+    font-size: 8rem;
   }
-
 
   .md-header {
     color: red;
