@@ -1,21 +1,40 @@
 body {
   font-family: sans-serif;
   font-size: 16px;
-  margin: auto 10%;
 }
 
 small {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
-.jumbotron, .jumbotron h1 {
+article {
+  padding: 2% 10%;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.jumbotron {
+  height: 50vh;
+  padding-top: 15vh;
+  background-color: #252a44;
+  color: white;
   text-align: center;
-  font-weight: bold;
+}
+
+#myName {
+  font-size: 3.5rem;
+}
+
+#subtitle {
+
 }
 
 .carousel-inner {
   height: 400px;
-  width: 100%;
 }
 
 .carousel-item {
@@ -23,27 +42,30 @@ small {
   width: 100%;
 }
 
-.carousel-item img {
+.carousel-item img, .iframe-wrapper iframe {
   display: block;
-  max-width: 800px;
-  width: 100%;
-  height: auto;
+  max-width: 325px;
+  max-height: 325px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.iframe-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
 
 .icon-img {
   max-height: 75px;
   border-radius: 15px;
+}
+
+#experience-icon {
+  float: left;
+  margin: 3rem;
+  font-size: 12rem;
+}
+
+.project-desc {
+  margin-top: 2rem;
+  font-size: 1.4rem;
 }
 
 .inline-text {
@@ -78,24 +100,62 @@ small {
   background-color: lightgreen;
 }
 
-
-@media (min-width: 768px) {
-  .carousel-inner {
-    height: 800px;
-  }
-
-  .carousel-item img {
-    max-height: 100%;
-  }
+.light-feature {
+  background-color: white;
 }
 
-@media (max-width: 767px) and (min-width: 500px) {
+.dark-feature {
+  background-color: #f5f5f5;
+}
+
+
+
+/* large screens */
+@media (min-width: 1080px) {
+
+  .jumbotron {
+    height: 50vh;
+    padding-top: 15vh;
+  }
+
+  
+
+  #myName {
+    font-size: 5rem;
+  }
+
+
+  .md-header {
+    color: red;
+  }
+
   .carousel-inner {
-    height: 500px;
+    height: 900px;
   }
 
   .carousel-item img, .carousel-item iframe {
-    max-width: 425px;
-    max-height: 100%;
+    max-width: 825px;
+    max-height: 825px;
+  }
+}
+
+/* medium screens */
+@media (min-width: 767px) and (max-width: 1079px) {
+  .jumbotron {
+    height: 50vh;
+    padding-top: 15vh;
+  }
+
+  .md-header {
+    color: red;
+  }
+
+  .carousel-inner {
+    height: 600px;
+  }
+
+  .carousel-item img, .carousel-item iframe {
+    max-width: 525px;
+    max-height: 525px;
   }
 }
