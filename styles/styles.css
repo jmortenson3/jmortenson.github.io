@@ -81,6 +81,36 @@ header {
   border-radius: 15px;
 }
 
+.link-view-project, .link-view-source {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.link-view-source {
+  background-color: rgb(255, 127, 80);
+}
+
+.link-view-source:hover {
+  background-color: rgb(255, 147, 100);
+  text-decoration: none;
+  color: white;
+}
+
+.link-view-project {
+  background-color: rgb(105, 186, 205);
+}
+
+.link-view-project:hover {
+  background-color: rgb(135, 206, 235);
+  text-decoration: none;
+  color: white;
+}
+
+
 #experience-icon {
   float: left;
   margin: 3rem;
@@ -176,6 +206,28 @@ header {
   #myName, #occupation, #passion, #openSource {
     color: inherit;
   }
+
+  .feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .odd-feature {
+    flex-direction: row-reverse;
+  }
+
+  .feature-img, .feature-text {
+    width: 40vw;
+  }
+
+  .feature-text {
+    padding-top: 25%;
+  }
+  
+  .link-view-project, .link-view-source {
+    display: inline;
+  }
 }
 
 /* medium screens */
@@ -208,8 +260,12 @@ header {
     max-width: 525px;
     max-height: 525px;
   }
-  
+
   #myName, #occupation, #passion, #openSource {
     color: inherit;
+  }
+  
+  .link-view-project, .link-view-source {
+    display: inline;
   }
 }
