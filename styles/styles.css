@@ -16,15 +16,15 @@ article {
 .container {
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
-.jumbotron {
+header {
   height: 100vh;
   padding-top: 25vh;
   background-color: #252a44;
   color: white;
   text-align: center;
+  display: flex;
 }
 
 #greeting {
@@ -50,6 +50,11 @@ article {
 
 #subtitle {
 
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
 }
 
 .carousel-inner {
@@ -119,11 +124,11 @@ article {
   background-color: lightgreen;
 }
 
-.light-feature {
+.odd-feature {
   background-color: white;
 }
 
-.dark-feature {
+.even-feature {
   background-color: #f5f5f5;
 }
 
@@ -131,10 +136,24 @@ article {
 
 /* large screens */
 @media (min-width: 1080px) {
+  header {
+    padding-top: 0;
+    background-color: white;
+    color: #363839;
+    flex-direction: row;
+    align-content: space-between;
+  }
 
-  .jumbotron {
-    height: 50vh;
-    padding-top: 15vh;
+  .header-text {
+    padding-top: 25vh;
+    width: 50vw;
+  }
+
+  .header-img {
+    width: 50vw;
+    background-image: url('../img/alexandru-acea--WBYxmW4yuw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   #greeting {
@@ -153,13 +172,28 @@ article {
     max-width: 825px;
     max-height: 825px;
   }
+
+  #myName, #occupation, #passion, #openSource {
+    color: inherit;
+  }
 }
 
 /* medium screens */
 @media (min-width: 767px) and (max-width: 1079px) {
-  .jumbotron {
-    height: 50vh;
-    padding-top: 15vh;
+  header {
+    flex-direction: row;
+    align-content: space-between;
+  }
+
+  .header-text {
+    width: 50vw;
+  }
+
+  .header-img {
+    width: 50vw;
+    background-image: url('../img/alexandru-acea--WBYxmW4yuw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   .md-header {
@@ -173,5 +207,9 @@ article {
   .carousel-item img, .carousel-item iframe {
     max-width: 525px;
     max-height: 525px;
+  }
+  
+  #myName, #occupation, #passion, #openSource {
+    color: inherit;
   }
 }
